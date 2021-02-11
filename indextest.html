@@ -1,0 +1,74 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ביהלום HIT</title>
+    <meta name="description" content="name of game" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="names" />
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="indextest.html">
+
+                <img id="logo" src="images/logo.png" /> <!--הלוגו של המשחק שלכם-->
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <a class="closeAbout">X</a>
+            <h1>ביהלום HIT</h1>
+            <p id="odotTxt1">אפיון ופיתוח: לינדה בונים | קרן הולצמן | איבון דקר</p>
+            <p id="odotTxt2">
+                אופיין ופותח במסגרת פרויקט בקורסים:<br />
+                סביבות לימוד אינטראקטיביות 1 + תכנות אינטראקטיבי 1<br />
+                שנת לימודים: תשפ"א<br />
+            </p>
+            <img id="HITlogo" src="images/HITlogo.jpg" />
+            <a id="telem" href="https://www.hit.ac.il/telem/overview">הפקולטה לטכנולוגיות למידה</a>
+            <p>Credits: This project includes icons by Freepik and Pixabay</p>
+        </div>
+
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+            <a class="closeHowToPlay">X</a>
+            <h1>הוראות:</h1>
+            <p>
+                בכל סבב - ביגי הגמד יציג שאלה שונה<br />
+                עליכם להתאים בין היהלומים לשאלות המוצגות<br />
+                ההתאמה מתבצעת על ידי לחיצה על היהלום בעזרת העכבר<br />
+                שימו לב - לכל שאלה קיים יהלום מתאים אחד בלבד<br />
+                נסו לבצע את ההתאמות כמה שיותר מהר<br />
+                ולאסוף את היהלומים לפני שהבוקר יגיע!<br />
+            </p>
+        </div>
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם (לא קובץ האנימייט)-->
+            <iframe id="gameIframe" src="get the daimondnew.html" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+        </div>
+    </div>
+</body>
+
+</html>
